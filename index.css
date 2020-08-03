@@ -19,3 +19,20 @@ a{
     height: 60px;
     background-color: black;
 }
+.navigation-content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 12%;
+}
+.menu ul{
+    display: flex;
+    
+}
+.menu ul li a{
+    padding: 0px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+}
