@@ -37,12 +37,14 @@ a{
     color: white;
     
 }
-.first-row{
-    position: relative;
-    display: inline-block;
-}
 .box{
-    width: 900px;
-    float: right;
-    align-items: center;
+    display: flex;
+    background-color: white;
+    opacity: 90%;
+    width: 320px;
+    padding: 10px;
+    float: center;
 }
+    
+
+
