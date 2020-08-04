@@ -41,7 +41,6 @@ a{
 .box{
     display: flexbox;
     background-color: rgba(0, 0, 0, 0.835);
-   float: left;
     opacity: 90%;
     width: 320px;
     padding: 10px;
