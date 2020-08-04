@@ -8,20 +8,52 @@
     <title>pizza joint</title>
 </head>
 <body>
+<!--Start of navigation-->
     <div class="navigation-container">
-    <div class="navigation-content"></div>
-    </div>
+    <div class="navigation-content">  
     <div class="menu">
         <ul>
             <li><a href="#">Pizza joint!</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="#">menu</a></li>
             <li><a href="#">delivery location</a></li>
             <li><a href="#">view your order</a></li>
         </ul>
     </div>
-
-
-<script src="./jquery-3.5.1.js"></script>
-<script src="./index.js"></script>
-</body>
-</html>
+    </div>
+    </div>
+    <br><br>
+<!--end of navigation-->
+<div class="content">
+    <!----------row 1----------------------->
+<div class="first-row">
+    <button class="pizza">choose pizza</button>
+<select id="pizza" name="" form="pizzalist">
+  <option value="flavours">flavours</option>
+  <option value="classic">classic</option>
+  <option value="deluxe">deluxe</option>
+</select>
+    </div>
+</div>
+<br>
+<!--------------row 2----------------------->
+<div class="second-row">
+    <button class="toppings">select toppings</button>
+    <select id="toppings" name="" form="toppingslist">
+        <option value="cheese">extra cheese</option>
+        <option value="bacon">extra bacon</option>
+        <option value="pepperoni">pepperoni</option>
+      </select>
+</div>
+<br>
+<!--------------------row 3----------------->
+<div class="third-row">
+    <button class="crust">type of crust</button>
+    <select id="crust" name="" form="pizzacrust">
+        <option value="flatbread">flatbread</option>
+        <option value="thin crust">thin crust</option>
+        <option value="double crust">double crust</option>
+       
+      </select>
+    </div>
+   </div>
+</div>
