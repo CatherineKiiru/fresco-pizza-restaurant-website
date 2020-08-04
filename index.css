@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url(../images/pizza1.jpg);
+    background-image: url(../images/pizza3.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -17,7 +17,8 @@ a{
 .navigation-container{
     width: 100%;
     height: 60px;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.835);
+    opacity: 90%;
 }
 .navigation-content{
     height: 80px;
@@ -38,13 +39,14 @@ a{
     
 }
 .box{
-    display: flex;
-    background-color: white;
+    display: flexbox;
+    background-color: rgba(0, 0, 0, 0.835);
+   float: left;
     opacity: 90%;
     width: 320px;
     padding: 10px;
-    float: center;
-}
     
+}
+
 
 
