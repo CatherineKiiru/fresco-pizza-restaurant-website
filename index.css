@@ -48,6 +48,7 @@ h2{
     left: 0;
     height: 100%;
     width: 100%;
+    transform: translateX(-100%);
 }
 
 .close-nav-slider{
@@ -60,9 +61,44 @@ h2{
     padding: 15px;
 }
 
-.nav-links{
+.nav-links-container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.nav-links-container{
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.openNav{
+    animation: openNav 0.5s forwards;
+}
+
+.closeNav{
+    animation: closeNav 0.5s forwards;
+}
+
+@keyframes openNav{
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes closeNav{
+    0%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    } 
 }
