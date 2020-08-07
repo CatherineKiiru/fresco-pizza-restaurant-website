@@ -16,14 +16,17 @@ h2{
 .title-background{
     background: black;
     width: 100;
-    padding: 10px;
+    padding: 5px;
     margin: auto;
+    
 }
 
 .title{
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 70px;
+    font-family: 'Caveat', cursive;
+
 }
 
 .nav-slider{
