@@ -3,92 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>fresco pizza bar!</title>
     <link rel="stylesheet" href="index.css">
-    <title>pizza joint</title>
+    <link rel="stylesheet" href="tabs.css">
 </head>
 <body>
-<!--Start of navigation-->
-    <div class="navigation-container">
-    <div class="navigation-content">  
-    <div class="menu">
-        <ul>
-            <li><a href="#">pizza joint !</a></li>
-            <li><a href="#">download menu</a></li>
-            <li><a href="#">great deals!</a></li>
-            <li><a href="#">view your order</a></li>
-        </ul>
-    </div>
-    </div>
-    </div>
-    <br><br>
-<!--end of navigation-->
-<div class="box">
-    <!----------row 1----------------------->
-    <form action="" id="pizzaform">
-<div class="first-row">
-    <button class="pizza">choose pizza</button>
-<select id="pizza" name="" form="pizzalist">
-  <option value="select">select</option>
-  <option value="classic">classic</option>
-  <option value="deluxe">deluxe</option>
-</select>
-    </div>
-<br>
+    <main>
+        <section id="landing-page">
+            <div class="nav-slider">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <header class="title-background">
+                <h2 class="title"> fresco pizza bar</h2>
+            </header>
+    </section>
+      <section class="nav-slider">
 
-<!--------------row 2----------------------->
-<div class="second-row">
-    <button class="size">Pizza size</button>
-    <select id="size" name="" form="sizelist">
-        <option value="select">select</option>
-        <option value="small">Small - Kshs 500/=</option>
-        <option value="medium">medium - Kshs 800/=</option>
-        <option value="large">Large - Kshs 1,000/=</option>
-      </select>
-</div>
-<br>
-<!--------------row 3----------------------->
-<div class="third-row">
-    <button class="toppings">select toppings</button>
-    <select id="toppings" name="" form="toppingslist">
-        <option value="select">select</option>
-        <option value="cheese">extra cheese</option>
-        <option value="bacon">extra bacon</option>
-        <option value="pepperoni">pepperoni</option>
-      </select>
-</div>
-<br>
-<!--------------------row 4----------------->
-<div class="fourth-row">
-    <button class="crust">type of crust</button>
-    <select id="crust" name="" form="pizzacrust">
-        <option value="select">select</option>
-        <option value="flatbread">flatbread</option>
-        <option value="thin crust">thin crust</option>
-        <option value="double crust">double crust</option>
-      </select>
-    </div>
-    <br>
-    <!--------------------row 5----------------->
-<div class="fifth-row">
-    <button class="delivery">delivery options</button>
-    <select id="crust" name="" form="pizzacrust">
-        <option value="select">select</option>
-        <option value="to collect">to collect</option>
-        <option value="to be delivered">to be delivered</option>
-      </select>
-    </div>
-    <br>
-    <!--------------------row 6----------------->
- <div class="sixth-row">
-     <button>Quantity</button>
-    <input type="number" id="quantity" name="quantity" min="1" max="50">
-    </div>
-    <br>
-     <!--------------------row 7----------------->
-<div class="seventh-row">
-    <input type="submit" value="submit">
-    </div>
-</form>
-   </div>
-</div>
+      </section>
+    </main>
+
+    <script src="/index.js"></script>
+    <script src="/tabs.js"></script>
+</body>
+</html>
