@@ -25,6 +25,44 @@ h2{
     color: white;
     font-size: 50px;
 }
+
 .nav-slider{
-    padding:15px
+    padding:15px;
+    cursor: pointer;
+}
+
+.line{
+    background: white;
+    height: 3px;
+    margin: 5px;
+    width: 30px;
+}
+.line:nth-child(1){
+    margin-top: 0;
+}
+
+.nav-slider-section{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.close-nav-slider{
+    border: none;
+    outline: none;
+    float: right;
+    background: transparent;
+    color: rgb(212, 141, 26);
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
