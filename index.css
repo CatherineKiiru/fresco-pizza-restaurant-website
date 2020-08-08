@@ -105,13 +105,13 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    vertical-align: top;
+    vertical-align: middle;
 }
 #hero h1{
     margin: 30px 0 10px 0;
     font-weight: bold;
     line-height: 48px;
-   font-size: 50px;
+   font-size: 100px;
     color: white;
     font-family: 'Caveat', cursive;
 }
@@ -184,7 +184,7 @@
     background: #ff9b04a6;
     border-top: 4px solid #f08902;
     padding: 30px;
-    box-shadow: 0px 2px 15px rgba(241, 159,5, 0.5);
+    box-shadow: 0px 8px 80px rgba(241, 159,5, 0.5);
     margin-top: -60px;
     transition: 0.3s;
 }
@@ -194,7 +194,9 @@
     margin-bottom: 20px;
 }
 .variety .card-title a{
-    color: black;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
     transition: ease-in-out;
 }
 .variety .card-text{
