@@ -2,7 +2,7 @@
 .title{
     text-align: center;
     color:  rgb(167, 104, 11);
-    font-size: 80px;
+    font-size: 60px;
     font-family: 'Caveat', cursive;
     margin-bottom: 0;
 }
@@ -107,13 +107,14 @@
     text-align: center;
     vertical-align: middle;
 }
-#hero h1{
+#hero h5{
     margin: 30px 0 10px 0;
     font-weight: bold;
-    line-height: 48px;
-   font-size: 100px;
+    line-height: 8px;
+   font-size: 20px;
     color: white;
-    font-family: 'Caveat', cursive;
+    
+    
 }
 @media (max-width: 768px){
     #hero h1{
@@ -121,10 +122,10 @@
         line-height: 36px;
     }
 }
-#hero h2{
+.input-container{
     color: white;
     margin-bottom: 50px;
-    font-family: 'Caveat', cursive; 
+     
 }
 @media(max-width: 768px){
     #hero h2{

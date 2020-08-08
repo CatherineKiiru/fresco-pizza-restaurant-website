@@ -23,7 +23,7 @@
             <div class="row">
                 <div class="col-md-6 d-flex align-items-center">
                     <p class="mb-0 phone p1-md-2">
-                        <a href="#" class="mr-20">
+                        <a href="login.html" class="mr-20">
                             <i class="fas fa-phone mr-1"></i>
                             +254 735 494 440
                         </a>
@@ -48,7 +48,7 @@
                         </div>
                         <div class="reg">
                             <a href="#" class="mr-2 mb-0">sign-up</a>
-                            <a href="#">log in</a>
+                            <a href="login.html">log in</a>
                         </div>
                     </div>
             </div>
@@ -90,10 +90,51 @@
 </nav>
 <!--------------------------end of navigation bar------------------------->
 
-<!-----------------------start of hero section------------------------------->
+<!-----------------start of hero ordering section---------------------------------->
 <section id="hero">
-    <div class="hero-container">
+<div class="hero-container">
+    <form action="/action_page.php">
         <div class="hero-logo">
+      <h5>select pizza</h5>
+        </div>
+        <div class="input-container">
+      <input type="radio" id="classic" name="" value="classic">
+      <label for="classic">classic pizza</label><br>
+      <input type="radio" id="" name="" value="deluxe">
+      <label for="deluxe">deluxe pizza</label><br>
+    
+      <h5>Select size</h5> 
+      <input type="radio" id="small" name="" value="800">
+      <label for="small">small - Kshs 800.00</label><br>
+      <input type="radio" id="medium" name="" value="1000">
+      <label for="medium">medium - Kshs 1,000.00</label><br>  
+      <input type="radio" id="large" name="" value="1200">
+      <label for="large">large - 1,200.00</label><br>
+    
+      <h5>Select crust</h5> 
+      <input type="radio" id="double" name="" value="200">
+      <label for="double">double crust - kshs 200.00</label><br>
+      <input type="radio" id="thincrust" name="age" value="250">
+      <label for="thin">thin crust - kshs 250.00</label><br>  
+      <input type="radio" id="vegan" name="age" value="300">
+      <label for="vegan">vegan crust - kshs 300.00</label><br>
+    
+      <h5>Quantity</h5>
+      <label for="quantity"></label>
+      <input type="number" id="quantity" name="quantity" min="1" max="50"><br><br>
+    </div> 
+      <input type="submit" value="Submit" onsubmit="calculateTotal()" >
+      <input type="reset">
+    </form>
+    </div>
+    </div>
+</section>
+
+
+<!-----------------------end of ordering hero section------------------------------->
+
+   <!---  <div class="hero-container">
+        
             <h1 class="font-weight-bold">Delicious pizza and more!</h1>
         </div>
         <h2 class="font-weight-bold">Happy memories!</h2>
@@ -101,7 +142,7 @@
             <a href="#" class="btn-get-started bg-black">order now</a>
         </div>
     </div>
-</section>
+</section> -->
 <!----------------end of hero section--------------------------------------->
 
 <!---------------- start of variety section--------------------------------->
@@ -214,17 +255,10 @@
 </div>
     </div>
 </section>
-
-
-
-
-
-
-
 <!-----------------end of variety section---------------------------------->
 
-    
 
+ 
     <script src="/index.js"></script>
    <script src="/jquery-3.5.1.js"></script>
 </body>
