@@ -2,7 +2,7 @@
 .title{
     text-align: center;
     color:  rgb(167, 104, 11);
-    font-size: 60px;
+    font-size: 80px;
     font-family: 'Caveat', cursive;
     margin-bottom: 0;
 }
@@ -114,7 +114,6 @@
    font-size: 20px;
     color: white;
     
-    
 }
 @media (max-width: 768px){
     #hero h1{
@@ -224,3 +223,8 @@ color: #854101;
 }
 
 /*-------------- end of variety section-----------*/
+.quantity-container{
+    font-style: italic;
+    font-weight: bolder;
+    
+}
