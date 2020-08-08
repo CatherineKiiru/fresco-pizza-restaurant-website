@@ -81,7 +81,7 @@
     color:  rgb(167, 104, 11);
 }
 /*...............end of nav section.....*/
-/*--------------Hero section-----------*/
+/*-------------- start of hero section-----------*/
 #hero{
     display: table;
     width: 100%;
@@ -156,3 +156,68 @@
     text-decoration:none;
     font-style: italic;
 }
+/*-------------- end of hero section-----------*/
+/*-------------- start of variety section---------*/
+.variety{
+    padding-bottom: 40px;
+}
+.variety .card{
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+    background: transparent;
+}
+.variety .card-img{
+    width: calc(100% +60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+}
+.variety .card-img img{
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.variety .card-body{
+    z-index: 10;
+    background: #ff9b04a6;
+    border-top: 4px solid #f08902;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgba(241, 159,5, 0.5);
+    margin-top: -60px;
+    transition: 0.3s;
+}
+.variety .card-body{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.variety .card-title a{
+    color: black;
+    transition: ease-in-out;
+}
+.variety .card-text{
+    color: black;
+}
+.variety .ream-more a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    transition: ease-in-out;
+}
+.variety .read-more a:hover{
+color: #854101;
+}
+.variety .card:hover img{
+    transform: scale(1.1);
+}
+.variety .card:hover .card-body{
+    border-color: #fdc134;
+}
+.variety .card:hover .card-body .card-title a{
+    color: #854101;
+}
+
+/*-------------- end of variety section-----------*/
