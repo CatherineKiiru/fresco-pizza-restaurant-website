@@ -95,12 +95,12 @@
 <div class="hero-container">
     <form action="/action_page.php" id="pizzaform">
     <div class="hero-logo">
-      <h5>select pizza</h5>
+      <h5>Select pizza</h5>
         </div>
         <div class="input-container">
-      <input type="radio" id="classic" name="pizza" value="classic">
+      <input type="radio" id="id01" name="pizza" value="classic">
       <label for="classic">classic pizza</label><br>
-      <input type="radio" id="" name="pizza" value="deluxe">
+      <input type="radio" id="id02" name="pizza" value="deluxe">
       <label for="deluxe">deluxe pizza</label><br>
 
       <div class="quantity-container">
@@ -110,37 +110,47 @@
         </div>
 <!------------>
       <h5>Select size</h5> 
-      <input type="radio" id="small" name="pizza" value="small1">
+      <input type="radio" id="small" name="pizza" value="800">
       <label for="small">small - Kshs 800.00</label><br>
-      <input type="radio" id="medium" name="pizza" value="medium1">
+      <input type="radio" id="medium" name="pizza" value="1000">
       <label for="medium">medium - Kshs 1,000.00</label><br>  
-      <input type="radio" id="large" name="pizza" value="large1">
+      <input type="radio" id="large" name="pizza" value="1200">
       <label for="large">large - 1,200.00</label><br>
 <!------------->
       <h5>Select crust</h5> 
-      <input type="radio" id="double" name="pizza" value="double1">
+      <input type="radio" id="id06" name="pizza" value="double1">
       <label for="double">double crust - kshs 200.00</label><br>
-      <input type="radio" id="thincrust" name="pizza" value="thincrust1">
+      <input type="radio" id="id07" name="pizza" value="thincrust1">
       <label for="thin">thin crust - kshs 250.00</label><br>  
-      <input type="radio" id="vegan" name="pizza" value="vegan1">
+      <input type="radio" id="id08" name="pizza" value="vegan1">
       <label for="vegan">vegan crust - kshs 300.00</label><br>
 <!-------------->
       <h5>Select toppings</h5>
-      <input type="radio" id="pepperoni" name="pizza" value="roni1">
-      <label for="double">double crust - kshs 200.00</label><br>
-      <input type="radio" id="cheese" name="pizza" value="cheese1">
-      <label for="thin">thin crust - kshs 250.00</label><br>  
-      <input type="radio" id="bacon" name="pizza" value="bacon1">
+      <input type="radio" id="pepperoni" name="pizza" value="200">
+      <label for="double">pepperoni - kshs 200.00</label><br>
+      <input type="radio" id="cheese" name="pizza" value="250">
+      <label for="thin">cheese - kshs 250.00</label><br>  
+      <input type="radio" id="vegan" name="pizza" value="300">
       <label for="vegan">vegan crust - kshs 300.00</label>
       
       <div class="quantity-container">
       <h6 class="quantity-container">toppings quantity</h6>
       <label for="quantity"></label>
       <input type="number" id="quantity" name="quantity" min="1" max="50">
-      </div>
+      </div><br>
+
+      <div class="quantity-container">
+      <label for="delivery">choose delivery option:</label><br>
+    <select name="delivery" id="delivery">
+        <option value="select">select</option>
+        <option value="300.00">Delivery - 300.00</option>
+        <option value="0">Collect - free</option>
+    </select><br>
+    </div>
     </div> 
-      <input type="submit" value="Submit" >
-      <input type="reset">
+    
+    <button class="btn btn-danger" type="submit" onclick="" id="submit">Place order</button>
+      <button type="reset" class="btn btn-warning"> cancel order</button>
     </form>
     </div>
 <!----------------------->
