@@ -1,21 +1,14 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url(/images/pizza3.jpg);
-    background-size: cover;
-    height: 100vh;
-    background-repeat: no-repeat;
-}
+
 .title{
     text-align: center;
-    color: white;
-    font-size: 60px;
+    color:  rgb(167, 104, 11);
+    font-size: 80px;
     font-family: 'Caveat', cursive;
+    margin-bottom: 0;
 }
 .title-container{
     background: black;
     width: 100%;
-    
 }
 .cover{
     position: relative;
@@ -48,7 +41,6 @@ body{
 .social-icon{
     display: inline-block;
     width: 50%;
-    
 }
 .social-icon p{
     display: block;
@@ -68,15 +60,50 @@ body{
 }
 .social-icon p a:hover i{
     color: black;
-}  
-
-.nav-links-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 }
-.nav-links-container{
+.bg-color{
+    background: black;
+}
+.navbar-brand{
+    color:  rgb(167, 104, 11);
+    font-weight: bold;
+    font-size: 20px!important;
+}
+.nav-link{
+    font-weight: bold;
+    color:  rgb(167, 104, 11);
+    font-size: 20px;
+}
+.btn-group{
+    color:  rgb(167, 104, 11);
+}
+.navbar-toggler i{
+    color:  rgb(167, 104, 11);
+}
+/*...............end of nav section.....*/
+/*--------------Hero section-----------*/
+#hero{
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: url(/images/pizza3.jpg);
+    background-size: cover;
+}
+@media(min-width:600px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+#hero .hero-logo{
+    margin: 20px;
+    max-width:100%;
+}
+#hero .hero-container{
+    background: rgba (0,0,0,0,2);
+    display: table-cell;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding: 10px;
+    vertical-align: middle;
 }
+
