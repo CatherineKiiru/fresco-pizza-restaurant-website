@@ -47,7 +47,7 @@
                             </p>
                         </div>
                         <div class="reg">
-                            <a href="#" class="mr-2 mb-0">sign-up</a>
+                            <a href="signup.html" class="mr-2 mb-0">sign-up</a>
                             <a href="login.html">log in</a>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
     <nav class="navbar navbar-expand-lg main-navbar bg-color main-navbar-color"
     id="main-navbar">
     <div class="container">
-        <a class="navbar-brand" href="#">Menu</a>
+        <a class="navbar-brand" href="">Menu</a>
         <div class="order-lg-last btn-group">
             <i class="fas fa-shopping-bag fa-2x"></i>
         </div>
@@ -71,7 +71,7 @@
         <ul class="navbar-nav ml-auto">
             
             <li class="nav-item">
-                <a href="#" class="nav-link">About us</a>
+                <a href="about.html" class="nav-link">About us</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">Our branches</a>
@@ -82,66 +82,67 @@
 </nav>
 <!--------------------------end of navigation bar------------------------->
 
-<!-----------------start of hero ordering section---------------------------------->
+<!-----------------start of form ordering section---------------------------------->
 <section id="hero">
 <div class="hero-container">
-    <form action="/action_page.php" id="pizzaform">
+    <form id="pizzaform">
     <div class="hero-logo">
-      <h5>Select pizza</h5>
+     <h5>Select pizza</h5>
         </div>
         <div class="input-container">
-      <input type="radio" id="id01" name="pizza" value="classic">
+      <input type="checkbox" id="id01" name="pizza" value="classic">
       <label for="classic">classic pizza</label><br>
-      <input type="radio" id="id02" name="pizza" value="deluxe">
+      <input type="checkbox" id="id02" name="pizza" value="deluxe">
       <label for="deluxe">deluxe pizza</label><br>
-
+ 
       <div class="quantity-container">
         <h6 class="quantity-container">pizza quantity</h6>
         <label for="quantity"></label>
-        <input type="number" id="quantity" name="quantity" min="1" max="50">
+        <input type="number" id="quantity" name="pizza" min="1" max="50">
         </div><br>
 <!------------>
       <h5>Select size</h5> 
-      <input type="radio" id="small" name="pizza" value="800">
+      <input type="checkbox" id="small" name="pizza" class="sum" value="800">
       <label for="small">small - Kshs 800.00</label><br>
-      <input type="radio" id="medium" name="pizza" value="1000">
+      <input type="checkbox" id="medium" name="pizza" class="sum" value="1000">
       <label for="medium">medium - Kshs 1,000.00</label><br>  
-      <input type="radio" id="large" name="pizza" value="1200">
+      <input type="checkbox" id="large" name="pizza" class="sum" value="1200">
       <label for="large">large - 1,200.00</label><br>
 <!------------->
       <h5>Select crust</h5> 
-      <input type="radio" id="id06" name="pizza" value="double1">
+      <input type="checkbox" id="crust1" name="pizza" class="sum" value="200">
       <label for="double">double crust - kshs 200.00</label><br>
-      <input type="radio" id="id07" name="pizza" value="thincrust1">
+      <input type="checkbox" id="crust2" name="pizza" class="sum" value="250">
       <label for="thin">thin crust - kshs 250.00</label><br>  
-      <input type="radio" id="id08" name="pizza" value="vegan1">
+      <input type="checkbox" id="crust3" name="pizza" class="sum" value="300">
       <label for="vegan">vegan crust - kshs 300.00</label><br>
 <!-------------->
       <h5>Select toppings</h5>
-      <input type="radio" id="pepperoni" name="pizza" value="200">
+      <input type="checkbox" id="pepperoni" name="pizza" class="sum" value="200">
       <label for="double">pepperoni - kshs 200.00</label><br>
-      <input type="radio" id="cheese" name="pizza" value="250">
+      <input type="checkbox" id="cheese" name="pizza" class="sum" value="250">
       <label for="thin">cheese - kshs 250.00</label><br>  
-      <input type="radio" id="vegan" name="pizza" value="300">
+      <input type="checkbox" id="vegan" name="pizza" class="sum" value="300">
       <label for="vegan">vegan crust - kshs 300.00</label>
       
       <div class="quantity-container">
       <h6 class="quantity-container">toppings quantity</h6>
       <label for="quantity"></label>
-      <input type="number" id="quantity" name="quantity" min="1" max="50">
+      <input type="number" id="quantity" name="pizza" min="1" max="50">
       </div><br>
 
       <div class="quantity-container">
       <label for="delivery">choose delivery option:</label><br>
-    <select name="delivery" id="delivery">
+    <select name="delivery" id="delivery" >
         <option value="select">select</option>
-        <option value="300.00">Delivery - 300.00</option>
-        <option value="0">Collect - free</option>
+        <option value="">Delivery 300.00</option>
+        <option value="" >Collect - free</option>
     </select><br>
     </div>
     </div> 
-    
-    <button class="btn btn-danger" type="submit" onclick="" id="submit">Place order</button>
+<span id="payment-total" style="text-decoration:underline;">0</span>
+<input id="input" type="text" value="0"/>
+    <button class="btn btn-danger" type="submit" id="submit">Place order</button>
       <button type="reset" class="btn btn-warning"> cancel order</button>
     </form>
     </div>
@@ -181,7 +182,7 @@
             <div class="col-md-6 d-flex align-items-stretch">
                 <div class="card">
                     <div class="card-img">
-                        <img src="images/breakfast.jpg" alt="">
+                        <img src="/images/breakfast.jpg" alt="">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">
@@ -202,7 +203,7 @@
         <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
                 <div class="card-img">
-                    <img src="images/lunch and dinner.jpg" alt="">
+                    <img src="/images/lunch and dinner.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">
@@ -222,7 +223,7 @@
         <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
                 <div class="card-img">
-                    <img src="images/Dessert.jpg" alt="">
+                    <img src="/images/Dessert.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">
@@ -242,7 +243,7 @@
         <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
                 <div class="card-img">
-                    <img src="images/beers and cocktails.jpg" alt="">
+                    <img src="/images/beers and cocktails.jpg" alt="">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">
