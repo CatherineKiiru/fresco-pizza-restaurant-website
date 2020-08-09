@@ -4,27 +4,269 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fresco pizza bar!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="tabs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kalam&family=Lato&family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main>
-        <section id="landing-page">
-            <div class="nav-slider">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+    <!-------------start of title bar---------------->
+    <div class="title-container">
+        <h2 class="title"> fresco pizza bar</h2>
+    </div>
+    <!------------end of title bar-------------------->
+
+    <!-----------------Start-social icons & contacts bar------------------>
+    <div class="cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="mb-0 phone p1-md-2">
+                        <a href="login.html" class="mr-20">
+                            <i class="fas fa-phone mr-1"></i>
+                            +254 735 494 440
+                        </a>
+                        <a href="#"><i class="fas fa-paper-plane mr-1"></i> 
+                        cwkiiru0@gmail.com
+                        </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-md-end">
+                        <div class="social-icon mr-4">
+                            <p class="mb-0 d-flex">
+                                <a href="#" class="d-flex align-items-center
+                                justify-content-center">
+                            <i class="fab fa-facebook"></i></a>
+                            <a href="#" class="d-flex align-items-center
+                                justify-content-center">
+                            <i class="fab fa-instagram"></i></a>
+                            <a href="#" class="d-flex align-items-center
+                                justify-content-center">
+                            <i class="fab fa-twitter"></i></a>
+                            </p>
+                        </div>
+                        <div class="reg">
+                            <a href="#" class="mr-2 mb-0">sign-up</a>
+                            <a href="login.html">log in</a>
+                        </div>
+                    </div>
             </div>
-            <header class="title-background">
-                <h2 class="title"> fresco pizza bar</h2>
-            </header>
-    </section>
-      <section class="nav-slider">
+        </div>
+    </div>
+<!---------------------end-social icons & contacts bar--------------------------->
 
-      </section>
-    </main>
+<!---------------------------------Start of navigation bar----------------------->
+    <nav class="navbar navbar-expand-lg main-navbar bg-color main-navbar-color"
+    id="main-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">Menu</a>
+        <div class="order-lg-last btn-group">
+            <i class="fas fa-shopping-bag fa-2x"></i>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#myNav" arial-controls="nav" aria-expanded="false"
+        aria-label="toggle navigation"><i class="fas fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+                <a href="#" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Our branches</a>
+             </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<!--------------------------end of navigation bar------------------------->
 
+<!-----------------start of hero ordering section---------------------------------->
+<section id="hero">
+<div class="hero-container">
+    <form action="/action_page.php" id="pizzaform">
+    <div class="hero-logo">
+      <h5>Select pizza</h5>
+        </div>
+        <div class="input-container">
+      <input type="radio" id="id01" name="pizza" value="classic">
+      <label for="classic">classic pizza</label><br>
+      <input type="radio" id="id02" name="pizza" value="deluxe">
+      <label for="deluxe">deluxe pizza</label><br>
+
+      <div class="quantity-container">
+        <h6 class="quantity-container">pizza quantity</h6>
+        <label for="quantity"></label>
+        <input type="number" id="quantity" name="quantity" min="1" max="50">
+        </div><br>
+<!------------>
+      <h5>Select size</h5> 
+      <input type="radio" id="small" name="pizza" value="800">
+      <label for="small">small - Kshs 800.00</label><br>
+      <input type="radio" id="medium" name="pizza" value="1000">
+      <label for="medium">medium - Kshs 1,000.00</label><br>  
+      <input type="radio" id="large" name="pizza" value="1200">
+      <label for="large">large - 1,200.00</label><br>
+<!------------->
+      <h5>Select crust</h5> 
+      <input type="radio" id="id06" name="pizza" value="double1">
+      <label for="double">double crust - kshs 200.00</label><br>
+      <input type="radio" id="id07" name="pizza" value="thincrust1">
+      <label for="thin">thin crust - kshs 250.00</label><br>  
+      <input type="radio" id="id08" name="pizza" value="vegan1">
+      <label for="vegan">vegan crust - kshs 300.00</label><br>
+<!-------------->
+      <h5>Select toppings</h5>
+      <input type="radio" id="pepperoni" name="pizza" value="200">
+      <label for="double">pepperoni - kshs 200.00</label><br>
+      <input type="radio" id="cheese" name="pizza" value="250">
+      <label for="thin">cheese - kshs 250.00</label><br>  
+      <input type="radio" id="vegan" name="pizza" value="300">
+      <label for="vegan">vegan crust - kshs 300.00</label>
+      
+      <div class="quantity-container">
+      <h6 class="quantity-container">toppings quantity</h6>
+      <label for="quantity"></label>
+      <input type="number" id="quantity" name="quantity" min="1" max="50">
+      </div><br>
+
+      <div class="quantity-container">
+      <label for="delivery">choose delivery option:</label><br>
+    <select name="delivery" id="delivery">
+        <option value="select">select</option>
+        <option value="300.00">Delivery - 300.00</option>
+        <option value="0">Collect - free</option>
+    </select><br>
+    </div>
+    </div> 
+    
+    <button class="btn btn-danger" type="submit" onclick="" id="submit">Place order</button>
+      <button type="reset" class="btn btn-warning"> cancel order</button>
+    </form>
+    </div>
+<!----------------------->
+    </div>
+</section>
+
+
+<!-----------------------end of ordering hero section------------------------------->
+
+   <!---  <div class="hero-container">
+        
+            <h1 class="font-weight-bold">Delicious pizza and more!</h1>
+        </div>
+        <h2 class="font-weight-bold">Happy memories!</h2>
+        <div class="actions">
+            <a href="#" class="btn-get-started bg-black">order now</a>
+        </div>
+    </div>
+</section> -->
+<!----------------end of hero section--------------------------------------->
+
+<!---------------- start of variety section--------------------------------->
+<section id="variety" class="variety pt-4">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="text-center font-weight-bold">menu</h2>
+            <p>See what Fresco pizza bar has in store for you. From delicious pizzas
+                to scrumptous burgers, we offer you a wide range of delicacies guaranteed
+                to satisfy your taste buds
+            </p>
+        </div>
+
+<!------------------------------- start of card section------------------------------>
+        <div class="row">
+<!---------------------------  card section 1----------------------------------->
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/breakfast.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#">Breakfast</a>
+                        </h5>
+                        <p>
+                        </p>
+                        <div class="read-more"><a href="#">
+                            <i class="fas fa-arrow-circle-right"></i>
+                            See menu
+                        </a></div>
+                    </div>
+                </div>
+
+            </div>
+<!------------------------------ card section 2--------------------------------------->
+        
+        <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/lunch and dinner.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="#">Lunch n' Dinner</a>
+                    </h5>
+                    <p>
+                    </p>
+                    <div class="read-more"><a href="#">
+                        <i class="fas fa-arrow-circle-right"></i>
+                        See menu
+                    </a></div>
+                </div>
+            </div>
+            
+        </div>
+<!---------------------------------------- card section 3----------------------------------------->
+        <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/Dessert.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="#">Decadent desserts</a>
+                    </h5>
+                    <p>
+                    </p>
+                    <div class="read-more"><a href="#">
+                        <i class="fas fa-arrow-circle-right"></i>
+                        see menu
+                    </a></div>
+                </div>
+            </div>
+            
+        </div>
+        <!--------------------------------section 4----------------------------------->
+        <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/images/beers and cocktails.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="#">Drinks o' Clock</a>
+                    </h5>
+                    <p>
+                    </p>
+                    <div class="read-more"><a href="#">
+                        <i class="fas fa-arrow-circle-right"></i>
+                        See menu
+                    </a></div>
+                </div>
+            </div>
+            
+        </div>
+<!------------------------------- end of card section-----------------------------------> 
+</div>
+    </div>
+</section>
+<!-----------------end of variety section---------------------------------->
+
+
+ 
     <script src="/index.js"></script>
-    <script src="/tabs.js"></script>
+   <script src="/jquery-3.5.1.js"></script>
 </body>
 </html>
