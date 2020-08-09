@@ -71,7 +71,7 @@
         <ul class="navbar-nav ml-auto">
             
             <li class="nav-item">
-                <a href="#" class="nav-link">About us</a>
+                <a href="about.html" class="nav-link">About us</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">Our branches</a>
@@ -82,66 +82,66 @@
 </nav>
 <!--------------------------end of navigation bar------------------------->
 
-<!-----------------start of hero ordering section---------------------------------->
+<!-----------------start of form ordering section---------------------------------->
 <section id="hero">
 <div class="hero-container">
-    <form action="/action_page.php" id="pizzaform">
+    <form onsubmit="return false;" id="pizzaform">
     <div class="hero-logo">
-      <h5>Select pizza</h5>
+     <h5>Select pizza</h5>
         </div>
         <div class="input-container">
-      <input type="radio" id="id01" name="pizza" value="classic">
+      <input type="checkbox" id="id01" name="pizza" value="classic">
       <label for="classic">classic pizza</label><br>
-      <input type="radio" id="id02" name="pizza" value="deluxe">
+      <input type="checkbox" id="id02" name="pizza" value="deluxe">
       <label for="deluxe">deluxe pizza</label><br>
-
+ 
       <div class="quantity-container">
         <h6 class="quantity-container">pizza quantity</h6>
         <label for="quantity"></label>
-        <input type="number" id="quantity" name="quantity" min="1" max="50">
+        <input type="number" id="quantity" name="pizza" min="1" max="50">
         </div><br>
 <!------------>
       <h5>Select size</h5> 
-      <input type="radio" id="small" name="pizza" value="800">
+      <input type="checkbox" id="small" name="pizza" value="800" onclick="calculateTotal()">
       <label for="small">small - Kshs 800.00</label><br>
-      <input type="radio" id="medium" name="pizza" value="1000">
+      <input type="checkbox" id="medium" name="pizza" value="1000" onclick="calculateTotal()">
       <label for="medium">medium - Kshs 1,000.00</label><br>  
-      <input type="radio" id="large" name="pizza" value="1200">
-      <label for="large">large - 1,200.00</label><br>
+      <input type="checkbox" id="large" name="pizza" value="1200" onclick="calculateTotal()">
+      <label for="large">large - 1,200.00</label><br onclick="calculateTotal()">
 <!------------->
       <h5>Select crust</h5> 
-      <input type="radio" id="id06" name="pizza" value="double1">
+      <input type="checkbox" id="crust1" name="pizza" value="200" onclick="calculateTotal()">
       <label for="double">double crust - kshs 200.00</label><br>
-      <input type="radio" id="id07" name="pizza" value="thincrust1">
+      <input type="checkbox" id="crust2" name="pizza" value="250" onclick="calculateTotal()">
       <label for="thin">thin crust - kshs 250.00</label><br>  
-      <input type="radio" id="id08" name="pizza" value="vegan1">
+      <input type="checkbox" id="crust3" name="pizza" value="300" onclick="calculateTotal()">
       <label for="vegan">vegan crust - kshs 300.00</label><br>
 <!-------------->
       <h5>Select toppings</h5>
-      <input type="radio" id="pepperoni" name="pizza" value="200">
+      <input type="checkbox" id="pepperoni" name="pizza" value="200" onclick="calculateTotal()">
       <label for="double">pepperoni - kshs 200.00</label><br>
-      <input type="radio" id="cheese" name="pizza" value="250">
+      <input type="checkbox" id="cheese" name="pizza" value="250" onclick="calculateTotal()">
       <label for="thin">cheese - kshs 250.00</label><br>  
-      <input type="radio" id="vegan" name="pizza" value="300">
+      <input type="checkbox" id="vegan" name="pizza" value="300" onclick="calculateTotal()">
       <label for="vegan">vegan crust - kshs 300.00</label>
       
       <div class="quantity-container">
       <h6 class="quantity-container">toppings quantity</h6>
       <label for="quantity"></label>
-      <input type="number" id="quantity" name="quantity" min="1" max="50">
+      <input type="number" id="quantity" name="pizza" min="1" max="50" onclick="calculateTotal()">
       </div><br>
 
       <div class="quantity-container">
       <label for="delivery">choose delivery option:</label><br>
     <select name="delivery" id="delivery">
         <option value="select">select</option>
-        <option value="300.00">Delivery - 300.00</option>
-        <option value="0">Collect - free</option>
+        <option value="300.00" onclick="calculateTotal()">Delivery - 300.00</option>
+        <option value="0" onclick="calculateTotal()">Collect - free</option>
     </select><br>
     </div>
     </div> 
     
-    <button class="btn btn-danger" type="submit" onclick="" id="submit">Place order</button>
+    <button class="btn btn-danger" type="submit" onsubmit="calculateTotal()" id="submit">Place order</button>
       <button type="reset" class="btn btn-warning"> cancel order</button>
     </form>
     </div>
