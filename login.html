@@ -1,49 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kalam&family=Lato&family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-   <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
-    <title>login</title>
-</head>
-<body>
-    <h2>Please Login</h2>
-
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="images/avatar.png" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="center">
+      <input type="checkbox" id="show">
+      <label for="show" class="show-btn">View Form</label>
+      <div class="container">
+        <label for="show" class="close-btn fas fa-times" title="close"></label>
+        <div class="text">
+Login Form</div>
+<form action="#">
+          <div class="data">
+            <label>Email or Phone</label>
+            <input type="text" required>
+          </div>
+<div class="data">
+            <label>Password</label>
+            <input type="password" required>
+          </div>
+<div class="forgot-pass">
+<a href="#">Forgot Password?</a></div>
+<div class="btn">
+            <div class="inner">
 </div>
-  
-
-<script src="/login.js"></script>
+<button type="submit">login</button>
+          </div>
+<div class="signup-link">
+Not a member? <a href="#">Signup now</a></div>
+</form>
+</div>
+</div>
 </body>
 </html>
