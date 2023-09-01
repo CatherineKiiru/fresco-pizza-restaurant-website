@@ -227,3 +227,9 @@ color: #854101;
     font-weight: bolder;
     
 }
+
+.copyright {
+    text-align: center;
+    margin: auto;
+    font-size: medium;
+}
